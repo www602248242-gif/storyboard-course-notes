@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="分镜头设计课程的实际授课记录、课堂复盘与下次调整方案">
+  <title>分镜头设计 教学复盘档案</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#lesson-content">跳到课程内容</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回页面顶部">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>教学复盘档案</span>
+    </a>
+    <div class="header-actions">
+      <button class="quiet-button" id="print-button" type="button">打印本课</button>
+      <button class="quiet-button" id="copy-button" type="button">复制链接</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="page-title">
+      <div class="hero-copy">
+        <p class="eyebrow">STORYBOARD COURSE NOTES</p>
+        <h1 id="page-title">分镜头设计<br>教学复盘档案</h1>
+        <p class="hero-intro">保存每次课实际发生的讲授路线、课堂练习与教师判断。它不是理想化教案，而是下一轮授课可以直接参照和继续修订的工作记录。</p>
+      </div>
+      <div class="hero-visual" aria-label="由文本转化为分镜再进入课堂的示意图">
+        <div class="visual-label">TEXT</div>
+        <div class="storyboard-strip" aria-hidden="true">
+          <span class="frame frame-wide"></span>
+          <span class="frame frame-mid"></span>
+          <span class="frame frame-close"></span>
+        </div>
+        <div class="visual-label visual-label-end">CLASSROOM</div>
+      </div>
+      <dl class="hero-meta">
+        <div><dt>课程</dt><dd>分镜头设计</dd></div>
+        <div><dt>记录方式</dt><dd>实际授课后复盘</dd></div>
+        <div><dt>当前收录</dt><dd id="lesson-count">2 次课</dd></div>
+      </dl>
+    </section>
+
+    <section class="archive-layout" aria-label="课程复盘浏览区">
+      <aside class="lesson-index" aria-label="课程目录">
+        <p class="index-title">课程目录</p>
+        <nav id="lesson-nav"></nav>
+        <div class="index-note">
+          <span>使用方法</span>
+          <p>选择课次浏览。每次课按“实际路线—案例—练习—反思—下次调整”保存。</p>
+        </div>
+      </aside>
+
+      <article class="lesson-content" id="lesson-content" tabindex="-1" aria-live="polite"></article>
+    </section>
+
+    <section class="course-thread" aria-labelledby="thread-title">
+      <div>
+        <p class="eyebrow">COURSE THREAD</p>
+        <h2 id="thread-title">两次课正在形成同一条教学线</h2>
+      </div>
+      <ol class="thread-list">
+        <li><span>01</span><strong>表达意图</strong><p>故事想表达什么，观众应该感受到什么。</p></li>
+        <li><span>02</span><strong>视觉转化</strong><p>把抽象经验转化为可见的场景、动作和空间。</p></li>
+        <li><span>03</span><strong>镜头组织</strong><p>用景别、角度、机位、运动和调度组织叙事。</p></li>
+        <li><span>04</span><strong>分析修正</strong><p>通过拉片、机位图和课堂讲评验证镜头是否有效。</p></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>蔡逍遥 · 分镜头设计课程工作档案</p>
+    <p>后续课次可继续追加，不改动既有记录。</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
