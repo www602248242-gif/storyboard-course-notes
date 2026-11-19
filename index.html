@@ -43,6 +43,38 @@
       </dl>
     </section>
 
+    <section class="knowledge-overview" id="knowledge-overview" aria-labelledby="knowledge-title">
+      <div class="knowledge-overview-heading">
+        <div>
+          <p class="eyebrow">COURSE KNOWLEDGE MAP</p>
+          <h2 id="knowledge-title">已经讲过的知识，如何连接成一张网</h2>
+        </div>
+        <p>从“用分镜讲故事”出发，查看概念、案例与课堂练习之间的关系。选择课次或节点类型，可以突出当前需要回看的部分。</p>
+      </div>
+
+      <div class="network-controls" aria-label="知识网络筛选">
+        <div class="control-group" aria-label="按节点类型筛选">
+          <span>节点</span>
+          <button class="network-filter active" type="button" data-network-filter="all">全部</button>
+          <button class="network-filter" type="button" data-network-filter="concept">概念</button>
+          <button class="network-filter" type="button" data-network-filter="case">案例</button>
+          <button class="network-filter" type="button" data-network-filter="practice">练习</button>
+        </div>
+        <div class="control-group" aria-label="按课次筛选">
+          <span>课次</span>
+          <button class="lesson-filter active" type="button" data-lesson-filter="all">全部课次</button>
+          <button class="lesson-filter" type="button" data-lesson-filter="lesson-01">第一次课</button>
+          <button class="lesson-filter" type="button" data-lesson-filter="lesson-02">第二次课</button>
+        </div>
+      </div>
+
+      <div class="knowledge-shell global-knowledge-shell">
+        <div class="knowledge-canvas" id="course-knowledge-graph" aria-label="分镜头设计课程知识网络图"></div>
+        <aside class="knowledge-detail" id="course-knowledge-detail" aria-live="polite"></aside>
+      </div>
+      <p class="network-hint">点击节点查看说明；在手机上可左右移动网络图。</p>
+    </section>
+
     <section class="archive-layout" aria-label="课程复盘浏览区">
       <aside class="lesson-index" aria-label="课程目录">
         <p class="index-title">课程目录</p>

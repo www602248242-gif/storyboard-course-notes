@@ -125,3 +125,104 @@ window.COURSE_LESSONS = [
     ]
   }
 ];
+
+window.COURSE_KNOWLEDGE = {
+  typeLabels: {
+    core: "核心命题",
+    concept: "知识概念",
+    case: "影片与案例",
+    method: "课堂方法",
+    practice: "学生练习"
+  },
+  global: {
+    height: 720,
+    nodes: [
+      { id: "storytelling", label: "用分镜讲故事", type: "core", x: 50, y: 8, lessons: ["lesson-01", "lesson-02"], description: "整门课程的中心：分镜不是画面清单，而是用镜头组织信息、情绪、空间和观看顺序。" },
+
+      { id: "intent", label: "表达意图", type: "concept", x: 12, y: 25, lessons: ["lesson-01"], description: "先明确作品想表达什么，以及希望观众获得什么感受。" },
+      { id: "translation", label: "视觉转化", type: "concept", x: 37, y: 25, lessons: ["lesson-01", "lesson-02"], description: "把抽象主题和文字信息转化为可以被观看的场景、动作、空间与镜头。" },
+      { id: "shot-organization", label: "镜头组织", type: "concept", x: 63, y: 25, lessons: ["lesson-01", "lesson-02"], description: "使用景别、角度、机位、运动和调度建立镜头之间的叙事关系。" },
+      { id: "analysis", label: "分析与修正", type: "concept", x: 88, y: 25, lessons: ["lesson-01", "lesson-02"], description: "通过拉片、机位图、自查和课堂讲评判断镜头是否真正有效。" },
+
+      { id: "theme", label: "主题", type: "concept", x: 7, y: 43, lessons: ["lesson-01"], description: "故事最想讨论的经验、处境或问题，是后续选择场景与镜头的依据。" },
+      { id: "emotion", label: "观众情绪", type: "concept", x: 17, y: 43, lessons: ["lesson-01"], description: "明确希望观众在整体叙述或具体场景中感受到什么。" },
+      { id: "narrative-priority", label: "叙事优先", type: "concept", x: 7, y: 60, lessons: ["lesson-01"], description: "讨论分镜时优先判断故事是否清楚，而不是单独追求画面的漂亮和完整。" },
+      { id: "information-choice", label: "信息取舍", type: "concept", x: 17, y: 60, lessons: ["lesson-01"], description: "保留帮助叙述的画面元素，删去不影响故事理解和情绪的内容。" },
+
+      { id: "text-script", label: "文字剧本", type: "concept", x: 30, y: 43, lessons: ["lesson-01", "lesson-02"], description: "用文字描述事件、人物、动作和意图，是视觉设计开始前的信息来源。" },
+      { id: "storyboard-script", label: "分镜剧本", type: "concept", x: 42, y: 43, lessons: ["lesson-01"], description: "用画面顺序、景别、角度、动作和镜头说明把文字转化为可拍摄的方案。" },
+      { id: "scene-action", label: "场景与动作", type: "concept", x: 30, y: 60, lessons: ["lesson-01"], description: "把迷茫、压迫或期待等抽象体验落到具体地点、人物行为和可见细节中。" },
+      { id: "script-annotation", label: "剧本注解", type: "concept", x: 42, y: 60, lessons: ["lesson-02"], description: "对人物性格、状态和表演方式的补充说明，需要继续转化为姿态、速度、目光和构图。" },
+
+      { id: "shot-size", label: "景别", type: "concept", x: 55, y: 43, lessons: ["lesson-02"], description: "控制观众看到的信息范围、人物距离和情绪强度。" },
+      { id: "angle", label: "角度", type: "concept", x: 65, y: 43, lessons: ["lesson-02"], description: "摄影机观看人物与空间的位置，会改变力量关系和观众判断。" },
+      { id: "camera-movement", label: "摄像机运动", type: "concept", x: 55, y: 60, lessons: ["lesson-02"], description: "摄影机移动应具有叙事必要性，而不是只增加形式变化。" },
+      { id: "camera-position", label: "机位", type: "concept", x: 65, y: 60, lessons: ["lesson-01", "lesson-02"], description: "摄影机在空间中的具体位置，决定观众从哪里理解人物、事件与空间。" },
+      { id: "blocking", label: "演员与车辆调度", type: "concept", x: 60, y: 76, lessons: ["lesson-02"], description: "人物、车辆和摄影机在空间中的位置与运动共同构成场面调度。" },
+
+      { id: "breakdown", label: "逐镜头拉片", type: "method", x: 81, y: 43, lessons: ["lesson-02"], description: "逐个镜头暂停、记录与判断，观察每次变化如何推动信息和关系。" },
+      { id: "camera-map", label: "机位图", type: "method", x: 92, y: 43, lessons: ["lesson-01", "lesson-02"], description: "用平面图记录摄影机、人物和空间关系，使调度分析变得可见。" },
+      { id: "self-check", label: "作品自查", type: "method", x: 81, y: 60, lessons: ["lesson-02"], description: "用新知识回看旧作品，检查景别、角度、运动、调度与叙事作用。" },
+      { id: "class-critique", label: "课堂讲评", type: "method", x: 92, y: 60, lessons: ["lesson-01", "lesson-02"], description: "根据表达、情绪、场景、镜头必要性和信息取舍讨论学生作品。" },
+
+      { id: "case-yi-yi", label: "《一一》", type: "case", x: 8, y: 89, lessons: ["lesson-01"], description: "用于观察导演如何预先设计机位、人物和空间关系。" },
+      { id: "case-ran", label: "《乱》", type: "case", x: 22, y: 89, lessons: ["lesson-01"], description: "用于观察分镜中的色彩、构图和人物运动如何进入最终影像。" },
+      { id: "case-parasite", label: "《寄生虫》", type: "case", x: 36, y: 89, lessons: ["lesson-02"], description: "用于讨论人物性格注解如何转化为可见的表演与镜头。" },
+      { id: "case-paths", label: "《光荣之路》", type: "case", x: 51, y: 89, lessons: ["lesson-02"], description: "通过庭审戏分析固定空间中的机位变化、演员调度与权力关系。" },
+      { id: "practice-minute", label: "一分钟故事", type: "practice", x: 70, y: 89, lessons: ["lesson-01"], description: "在一分钟内完成主题、情绪、场景与行动的基本叙事。" },
+      { id: "practice-shots", label: "十至十四镜头", type: "practice", x: 89, y: 89, lessons: ["lesson-02"], description: "把给定情境补充完整，再用有限镜头组织景别、角度和人物调度。" }
+    ],
+    edges: [
+      ["storytelling", "intent"], ["storytelling", "translation"], ["storytelling", "shot-organization"], ["storytelling", "analysis"],
+      ["intent", "theme"], ["intent", "emotion"], ["intent", "narrative-priority"], ["intent", "information-choice"],
+      ["translation", "text-script"], ["translation", "storyboard-script"], ["translation", "scene-action"], ["translation", "script-annotation"],
+      ["shot-organization", "shot-size"], ["shot-organization", "angle"], ["shot-organization", "camera-movement"], ["shot-organization", "camera-position"], ["shot-organization", "blocking"],
+      ["analysis", "breakdown"], ["analysis", "camera-map"], ["analysis", "self-check"], ["analysis", "class-critique"],
+      ["case-yi-yi", "camera-position"], ["case-ran", "camera-movement"], ["case-parasite", "script-annotation"], ["case-paths", "breakdown"], ["case-paths", "camera-map"],
+      ["practice-minute", "information-choice"], ["practice-minute", "class-critique"], ["practice-shots", "blocking"], ["practice-shots", "self-check"]
+    ]
+  },
+  lessons: {
+    "lesson-01": {
+      height: 470,
+      nodes: [
+        { id: "l1-core", label: "表达意图如何变成场景与镜头", type: "core", x: 50, y: 10, description: "第一次课的核心转化问题。" },
+        { id: "l1-theme", label: "主题", type: "concept", x: 13, y: 33, description: "先回答故事真正想表达什么。" },
+        { id: "l1-emotion", label: "观众情绪", type: "concept", x: 35, y: 33, description: "确定希望观众获得的情绪体验。" },
+        { id: "l1-scene", label: "具体场景", type: "concept", x: 58, y: 33, description: "把抽象体验放入食堂、图书馆和人群等可见空间。" },
+        { id: "l1-shot", label: "动作与镜头", type: "concept", x: 82, y: 33, description: "用人物行动、景别、角度和顺序形成叙述。" },
+        { id: "l1-choice", label: "信息取舍", type: "concept", x: 50, y: 56, description: "判断哪些元素有助于叙述，哪些可以省略。" },
+        { id: "l1-yi", label: "《一一》", type: "case", x: 14, y: 79, description: "观察空间、人物位置与机位选择。" },
+        { id: "l1-ran", label: "《乱》", type: "case", x: 34, y: 79, description: "观察绘画性分镜与最终镜头的关系。" },
+        { id: "l1-odyssey", label: "我的奥德赛时期", type: "case", x: 56, y: 79, description: "把迷茫与无奈转化为具体生活场景。" },
+        { id: "l1-minute", label: "一分钟故事", type: "practice", x: 82, y: 79, description: "学生在有限时间内完成第一次叙事实践。" }
+      ],
+      edges: [
+        ["l1-core", "l1-theme"], ["l1-core", "l1-emotion"], ["l1-theme", "l1-scene"], ["l1-emotion", "l1-scene"], ["l1-scene", "l1-shot"], ["l1-shot", "l1-choice"],
+        ["l1-yi", "l1-shot"], ["l1-ran", "l1-shot"], ["l1-odyssey", "l1-scene"], ["l1-choice", "l1-minute"]
+      ]
+    },
+    "lesson-02": {
+      height: 500,
+      nodes: [
+        { id: "l2-core", label: "文字意图如何变成空间关系", type: "core", x: 50, y: 9, description: "第二次课的核心转化问题。" },
+        { id: "l2-text", label: "文本与视觉意图", type: "concept", x: 11, y: 31, description: "识别剧本中的事件、人物状态和视觉方向。" },
+        { id: "l2-size", label: "景别", type: "concept", x: 30, y: 31, description: "控制信息范围、距离和情绪强度。" },
+        { id: "l2-angle", label: "角度", type: "concept", x: 48, y: 31, description: "改变人物力量关系和观众判断。" },
+        { id: "l2-movement", label: "摄像机运动", type: "concept", x: 66, y: 31, description: "判断摄影机运动是否具有叙事必要性。" },
+        { id: "l2-blocking", label: "机位与演员调度", type: "concept", x: 87, y: 31, description: "组织摄影机、人物和车辆在空间中的关系。" },
+        { id: "l2-note", label: "剧本注解", type: "concept", x: 12, y: 57, description: "把人物性格描述继续转化为姿态、目光和速度。" },
+        { id: "l2-parasite", label: "《寄生虫》", type: "case", x: 12, y: 83, description: "用人物描述示范文字如何进入表演和镜头。" },
+        { id: "l2-paths", label: "《光荣之路》", type: "case", x: 48, y: 67, description: "用庭审戏分析机位、调度与叙事关系。" },
+        { id: "l2-breakdown", label: "逐镜头拉片", type: "method", x: 69, y: 57, description: "逐镜头判断每次机位和调度变化的作用。" },
+        { id: "l2-map", label: "现场机位图", type: "method", x: 88, y: 67, description: "边观看边绘制摄影机和演员的空间关系。" },
+        { id: "l2-practice", label: "十至十四镜头练习", type: "practice", x: 70, y: 89, description: "把拉片经验转化为学生自己的镜头设计。" }
+      ],
+      edges: [
+        ["l2-core", "l2-text"], ["l2-core", "l2-size"], ["l2-core", "l2-angle"], ["l2-core", "l2-movement"], ["l2-core", "l2-blocking"],
+        ["l2-text", "l2-note"], ["l2-note", "l2-parasite"], ["l2-size", "l2-paths"], ["l2-angle", "l2-paths"], ["l2-blocking", "l2-paths"],
+        ["l2-paths", "l2-breakdown"], ["l2-breakdown", "l2-map"], ["l2-map", "l2-practice"], ["l2-blocking", "l2-practice"]
+      ]
+    }
+  }
+};
